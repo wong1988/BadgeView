@@ -20,7 +20,6 @@ dependencies {
 ```
 
 ## Method and Attribute
-==========
 
 ```
 <!-- 最大数值 -->
@@ -48,7 +47,6 @@ setBadgeMax(BadgeMax max)
 ```
 
 ## About
-==========
 
 本质上就是一个TextView，您可以像使用TextView一样使用它。
 不同之处：
@@ -58,7 +56,6 @@ setBadgeMax(BadgeMax max)
 
 
 CHANGE LOG
-==========
 
 0.0.3:
 
