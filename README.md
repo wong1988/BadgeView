@@ -54,7 +54,7 @@ setBadgeMax(BadgeMax max)
 3. setGravity()方法会强制设置居中显示
 
 
-CHANGE LOG
+## CHANGE LOG
 
 0.0.3:
 
