@@ -55,7 +55,7 @@ public class BadgeView extends AppCompatTextView {
 
 
     @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+    protected final void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
 
         if (oldh != h && h != mHeight) {
@@ -115,7 +115,7 @@ public class BadgeView extends AppCompatTextView {
 
 
     @Override
-    public void setText(CharSequence str, BufferType type) {
+    public final void setText(CharSequence str, BufferType type) {
 
         if (mBadgeMax == null) {
             // super(context, attrs, defStyleAttr)
