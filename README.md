@@ -1,5 +1,4 @@
-# BadgeView
-[![](https://jitpack.io/v/wong1988/BadgeView.svg)](https://jitpack.io/#wong1988/BadgeView)
+# BadgeView [![](https://jitpack.io/v/wong1988/BadgeView.svg)](https://jitpack.io/#wong1988/BadgeView)
 
  Android徽章View
 
