@@ -49,9 +49,9 @@ setBadgeMax(BadgeMax max)
 
 本质上就是一个TextView，您可以像使用TextView一样使用它。
 不同之处：
-1. setVisibility()方法会失效，此方法由BadgeView全面进行统一管理
-2. setSingleLine()方法会强制设置为单行
-3. setGravity()方法会强制设置居中显示
+1. setVisibility(int visibility)方法会失效，此方法由BadgeView全面进行统一管理
+2. setSingleLine(boolean singleLine)方法会强制设置为单行
+3. setGravity(int gravity)方法会强制设置居中显示
 
 
 ## Change Log
