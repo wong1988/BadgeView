@@ -57,6 +57,7 @@ setBadgeMax(BadgeMax max)
 
 注意：
 1. 控件宽高尽量使用wrap_content，而大小使用textSize去控制
+2. 如果setText()文本能正确格式化为long类型，会自动显示为符合数字类型的格式（小于 0 不显示 ，大于设置的最大值 显示为最大值），否则直接按照文本显示
 
 ## Change Log
 
