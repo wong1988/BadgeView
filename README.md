@@ -47,12 +47,16 @@ setBadgeMax(BadgeMax max)
 
 ## About
 
-本质上就是一个TextView，您可以像使用TextView一样使用它。
+本质上就是一个TextView，您可以像使用TextView一样使用它。本控件自带一个默认的背景样式（红色实心，白色外边框），可自行设置setBackground()来自定义样式。
+
 不同之处：
 1. setVisibility(int visibility)方法会失效，此方法由BadgeView全面进行统一管理
-2. setSingleLine(boolean singleLine)方法会强制设置为单行
-3. setGravity(int gravity)方法会强制设置居中显示
+2. setSingleLine(boolean singleLine)方法会强制为true，设置为单行
+3. setGravity(int gravity)方法会强制为Gravity.CENTER，设置居中显示
+4. 当文本长度为1时，paddingLeft与paddingRight将会失效，长度大于1时paddingLeft与paddingRight将会自动生效
 
+注意：
+1. 控件宽高尽量使用wrap_content，而大小使用textSize去控制
 
 ## Change Log
 
