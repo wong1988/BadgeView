@@ -4,7 +4,9 @@ package io.github.wong1988.badge;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.GradientDrawable;
+import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -50,6 +52,17 @@ public class BadgeView extends AppCompatTextView {
         BadgeMax temp = (maxEnum == 0 ? BadgeMax.MAX_99 : BadgeMax.MAX_999);
         setBadgeMax(temp);
         ta.recycle();
+
+
+        TextPaint paint = getPaint();
+
+        // 获取文本的实际高度
+        Paint.FontMetricsInt metrics = paint.getFontMetricsInt();
+
+        if (getIncludeFontPadding())
+            setMinWidth(metrics.bottom - metrics.top);
+        else
+            setMinWidth(metrics.descent - metrics.ascent);
 
     }
 
